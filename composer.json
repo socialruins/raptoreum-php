@@ -1,8 +1,8 @@
 {
-  "name": "bitwasp/bitcoin",
-  "description": "PHP Bitcoin library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
+  "name": "socialruins/raptoreum-php",
+  "description": "PHP Raptoreum library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
   "type": "library",
-  "homepage": "https://github.com/bit-wasp/bitcoin-php",
+  "homepage": "https://github.com/socialruins/raptoreum-php",
   "license": "Unlicense",
   "authors": [
     {
