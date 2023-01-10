@@ -104,4 +104,12 @@ class NetworkFactory
     {
         return new Networks\Zcash();
     }
+
+    /**
+     * @return NetworkInterface
+     */
+    public static function raptoreum()
+    {
+        return new Networks\Raptoreum();
+    }
 }
