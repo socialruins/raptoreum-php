@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
-use BitWasp\Bitcoin\Serializer\Block\BlockSerializer;
-use BitWasp\Bitcoin\Serializer\Script\ScriptWitnessSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\OutPointSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionInputSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionOutputSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionSerializer;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Serializer\Block\BlockSerializer;
+use Raptorio\Blockchain\Serializer\Script\ScriptWitnessSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\OutPointSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionInputSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionOutputSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionSerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

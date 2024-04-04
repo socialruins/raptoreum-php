@@ -1,6 +1,6 @@
 <?php
 
-namespace BitWasp\Bitcoin\Exceptions;
+namespace Raptorio\Blockchain\Exceptions;
 
 class ScriptStackException extends \Exception
 {

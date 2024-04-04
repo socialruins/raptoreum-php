@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic;
+namespace Raptorio\Blockchain\Key\Deterministic;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\Hash;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

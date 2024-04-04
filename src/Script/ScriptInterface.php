@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Script\Parser\Parser;
-use BitWasp\Bitcoin\SerializableInterface;
+use Raptorio\Blockchain\Script\Parser\Parser;
+use Raptorio\Blockchain\SerializableInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface ScriptInterface extends SerializableInterface
@@ -43,13 +43,13 @@ interface ScriptInterface extends SerializableInterface
      * @param WitnessProgram|null $witness
      * @return bool
      */
-    public function isWitness(& $witness): bool;
+    public function isWitness(&$witness): bool;
 
     /**
      * @param BufferInterface $scriptHash
      * @return bool
      */
-    public function isP2SH(& $scriptHash): bool;
+    public function isP2SH(&$scriptHash): bool;
 
     /**
      * @param bool $accurate

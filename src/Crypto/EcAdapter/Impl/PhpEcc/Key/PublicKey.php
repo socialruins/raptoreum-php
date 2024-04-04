@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Key\PublicKeySerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\Key;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Key\PublicKeySerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\Key;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
 use BitWasp\Buffertools\BufferInterface;
 use Mdanter\Ecc\Crypto\Signature\Signer;
 use Mdanter\Ecc\Primitives\CurveFpInterface;

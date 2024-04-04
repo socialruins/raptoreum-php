@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Interpreter;
+namespace Raptorio\Blockchain\Script\Interpreter;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

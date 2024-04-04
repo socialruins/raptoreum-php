@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Consensus;
+namespace Raptorio\Blockchain\Script\Consensus;
 
-use BitWasp\Bitcoin\Script\Consensus\Exception\BitcoinConsensusException;
-use BitWasp\Bitcoin\Script\Interpreter\InterpreterInterface;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Script\Consensus\Exception\BitcoinConsensusException;
+use Raptorio\Blockchain\Script\Interpreter\InterpreterInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 
 class BitcoinConsensus implements ConsensusInterface
 {

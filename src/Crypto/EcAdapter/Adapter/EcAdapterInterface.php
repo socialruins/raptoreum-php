@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Adapter;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Adapter;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
-use BitWasp\Bitcoin\Math\Math;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Math\Math;
 use BitWasp\Buffertools\BufferInterface;
 
 interface EcAdapterInterface

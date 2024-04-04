@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\SignatureHash;
+namespace Raptorio\Blockchain\Transaction\SignatureHash;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Script\ScriptInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Script\ScriptInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

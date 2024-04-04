@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic\Electrum;
+namespace Raptorio\Blockchain\Mnemonic\Electrum;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Mnemonic\MnemonicInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Mnemonic\MnemonicInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

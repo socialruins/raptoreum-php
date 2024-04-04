@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\MessageSigner;
+namespace Raptorio\Blockchain\MessageSigner;
 
-use BitWasp\Bitcoin\Address\PayToPubKeyHashAddress;
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Crypto\Random\Rfc6979;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Address\PayToPubKeyHashAddress;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Crypto\Random\Rfc6979;
+use Raptorio\Blockchain\Network\NetworkInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Buffertools;

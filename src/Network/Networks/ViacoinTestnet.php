@@ -1,9 +1,9 @@
 <?php
 
-namespace BitWasp\Bitcoin\Network\Networks;
+namespace Raptorio\Blockchain\Network\Networks;
 
-use BitWasp\Bitcoin\Network\Network;
-use BitWasp\Bitcoin\Script\ScriptType;
+use Raptorio\Blockchain\Network\Network;
+use Raptorio\Blockchain\Script\ScriptType;
 
 class ViacoinTestnet extends Network
 {

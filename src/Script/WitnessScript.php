@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Address\SegwitAddress;
-use BitWasp\Bitcoin\Exceptions\WitnessScriptException;
+use Raptorio\Blockchain\Address\SegwitAddress;
+use Raptorio\Blockchain\Exceptions\WitnessScriptException;
 
 class WitnessScript extends Script
 {

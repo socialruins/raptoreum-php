@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Collection;
+namespace Raptorio\Blockchain\Collection;
 
 use BitWasp\Buffertools\BufferInterface;
 
@@ -25,7 +25,7 @@ class StaticBufferCollection extends StaticCollection
      * StaticBufferCollection constructor.
      * @param BufferInterface ...$values
      */
-    public function __construct(BufferInterface... $values)
+    public function __construct(BufferInterface ...$values)
     {
         $this->set = $values;
     }

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Bloom;
+namespace Raptorio\Blockchain\Serializer\Bloom;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;
 

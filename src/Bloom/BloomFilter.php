@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Bloom;
+namespace Raptorio\Blockchain\Bloom;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Script\Classifier\OutputClassifier;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Bloom\BloomFilterSerializer;
-use BitWasp\Bitcoin\Transaction\OutPointInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Script\Classifier\OutputClassifier;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Bloom\BloomFilterSerializer;
+use Raptorio\Blockchain\Transaction\OutPointInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 class BloomFilter extends Serializable

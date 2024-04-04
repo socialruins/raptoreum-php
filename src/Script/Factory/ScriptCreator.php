@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Factory;
+namespace Raptorio\Blockchain\Script\Factory;
 
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Script\Interpreter\Number;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Script;
-use BitWasp\Bitcoin\Script\ScriptInterface;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Script\Interpreter\Number;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Script;
+use Raptorio\Blockchain\Script\ScriptInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -100,7 +100,7 @@ class ScriptCreator
      *  - data (BufferInterface)
      *  - script (ScriptInterface)
      *
-     * @param int[]|\BitWasp\Bitcoin\Script\Interpreter\Number[]|BufferInterface[] $sequence
+     * @param int[]|\Raptorio\Blockchain\Script\Interpreter\Number[]|BufferInterface[] $sequence
      * @return $this
      */
     public function sequence(array $sequence)
@@ -141,7 +141,7 @@ class ScriptCreator
         if ($n === 0) {
             $this->script .= chr(Opcodes::OP_0);
         } else if ($n === -1 || ($n >= 1 && $n <= 16)) {
-            $this->script .= chr(\BitWasp\Bitcoin\Script\encodeOpN($n));
+            $this->script .= chr(\Raptorio\Blockchain\Script\encodeOpN($n));
         } else {
             $this->push(Number::int($n)->getBuffer());
         }
@@ -156,7 +156,7 @@ class ScriptCreator
      * @param string... $opNames
      * @return $this
      */
-    public function op(string... $opNames)
+    public function op(string ...$opNames)
     {
         $opCodes = [];
         foreach ($opNames as $opName) {

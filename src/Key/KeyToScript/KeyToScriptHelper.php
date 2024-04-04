@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript;
+namespace Raptorio\Blockchain\Key\KeyToScript;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Key\KeyToScript\Decorator\P2shP2wshScriptDecorator;
-use BitWasp\Bitcoin\Key\KeyToScript\Decorator\P2shScriptDecorator;
-use BitWasp\Bitcoin\Key\KeyToScript\Decorator\P2wshScriptDecorator;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\KeyToScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\MultisigScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\P2wpkhScriptDataFactory;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Key\KeyToScript\Decorator\P2shP2wshScriptDecorator;
+use Raptorio\Blockchain\Key\KeyToScript\Decorator\P2shScriptDecorator;
+use Raptorio\Blockchain\Key\KeyToScript\Decorator\P2wshScriptDecorator;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\KeyToScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\MultisigScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\P2wpkhScriptDataFactory;
 
 class KeyToScriptHelper
 {
@@ -61,7 +61,7 @@ class KeyToScriptHelper
     /**
      * @param KeyToScriptDataFactory $scriptFactory
      * @return ScriptDataFactory
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
      */
     public function getP2shFactory(KeyToScriptDataFactory $scriptFactory): ScriptDataFactory
     {
@@ -71,7 +71,7 @@ class KeyToScriptHelper
     /**
      * @param KeyToScriptDataFactory $scriptFactory
      * @return ScriptDataFactory
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
      */
     public function getP2wshFactory(KeyToScriptDataFactory $scriptFactory): ScriptDataFactory
     {
@@ -81,7 +81,7 @@ class KeyToScriptHelper
     /**
      * @param KeyToScriptDataFactory $scriptFactory
      * @return ScriptDataFactory
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
      */
     public function getP2shP2wshFactory(KeyToScriptDataFactory $scriptFactory): ScriptDataFactory
     {

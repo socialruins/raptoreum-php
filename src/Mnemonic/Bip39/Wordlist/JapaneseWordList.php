@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic\Bip39\Wordlist;
+namespace Raptorio\Blockchain\Mnemonic\Bip39\Wordlist;
 
-use BitWasp\Bitcoin\Mnemonic\Bip39\Bip39WordListInterface;
-use BitWasp\Bitcoin\Mnemonic\WordList;
+use Raptorio\Blockchain\Mnemonic\Bip39\Bip39WordListInterface;
+use Raptorio\Blockchain\Mnemonic\WordList;
 
 class JapaneseWordList extends WordList implements Bip39WordListInterface
 {

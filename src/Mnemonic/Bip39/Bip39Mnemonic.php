@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic\Bip39;
+namespace Raptorio\Blockchain\Mnemonic\Bip39;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Mnemonic\MnemonicInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Mnemonic\MnemonicInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -46,7 +46,7 @@ class Bip39Mnemonic implements MnemonicInterface
      *
      * @param int $entropySize
      * @return string
-     * @throws \BitWasp\Bitcoin\Exceptions\RandomBytesFailure
+     * @throws \Raptorio\Blockchain\Exceptions\RandomBytesFailure
      */
     public function create(int $entropySize = null): string
     {

@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic;
+namespace Raptorio\Blockchain\Key\Deterministic;
 
-use BitWasp\Bitcoin\Address\BaseAddressCreator;
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Exceptions\InvalidDerivationException;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptAndSignData;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer;
-use BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\ExtendedKeySerializer;
-use BitWasp\Bitcoin\Util\IntRange;
+use Raptorio\Blockchain\Address\BaseAddressCreator;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Exceptions\InvalidDerivationException;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptAndSignData;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer;
+use Raptorio\Blockchain\Serializer\Key\HierarchicalKey\ExtendedKeySerializer;
+use Raptorio\Blockchain\Util\IntRange;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -209,7 +209,7 @@ class HierarchicalKey
     }
 
     /**
-     * @return \BitWasp\Bitcoin\Key\KeyToScript\ScriptAndSignData
+     * @return \Raptorio\Blockchain\Key\KeyToScript\ScriptAndSignData
      */
     public function getScriptAndSignData()
     {
@@ -222,7 +222,7 @@ class HierarchicalKey
 
     /**
      * @param BaseAddressCreator $addressCreator
-     * @return \BitWasp\Bitcoin\Address\Address
+     * @return \Raptorio\Blockchain\Address\Address
      */
     public function getAddress(BaseAddressCreator $addressCreator)
     {
@@ -280,7 +280,7 @@ class HierarchicalKey
      *
      * @param int $sequence
      * @return HierarchicalKey
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidDerivationException
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidDerivationException
      */
     public function deriveChild(int $sequence): HierarchicalKey
     {

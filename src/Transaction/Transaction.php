@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionSerializer;
-use BitWasp\Bitcoin\Util\IntRange;
-use BitWasp\Bitcoin\Utxo\Utxo;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionSerializer;
+use Raptorio\Blockchain\Util\IntRange;
+use Raptorio\Blockchain\Utxo\Utxo;
 use BitWasp\Buffertools\BufferInterface;
 
 class Transaction extends Serializable implements TransactionInterface

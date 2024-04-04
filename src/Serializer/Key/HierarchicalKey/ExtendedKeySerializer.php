@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Key\HierarchicalKey;
+namespace Raptorio\Blockchain\Serializer\Key\HierarchicalKey;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Key\Deterministic\HdPrefix\GlobalPrefixConfig;
-use BitWasp\Bitcoin\Key\Deterministic\HierarchicalKey;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PrivateKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Key\Deterministic\HdPrefix\GlobalPrefixConfig;
+use Raptorio\Blockchain\Key\Deterministic\HierarchicalKey;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PrivateKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Exceptions\ParserOutOfRange;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic\Electrum;
+namespace Raptorio\Blockchain\Mnemonic\Electrum;
 
-use BitWasp\Bitcoin\Mnemonic\WordListInterface;
+use Raptorio\Blockchain\Mnemonic\WordListInterface;
 
 interface ElectrumWordListInterface extends WordListInterface
 {

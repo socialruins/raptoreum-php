@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript\Decorator;
+namespace Raptorio\Blockchain\Key\KeyToScript\Decorator;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptAndSignData;
-use BitWasp\Bitcoin\Script\P2shScript;
-use BitWasp\Bitcoin\Script\ScriptType;
-use BitWasp\Bitcoin\Transaction\Factory\SignData;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptAndSignData;
+use Raptorio\Blockchain\Script\P2shScript;
+use Raptorio\Blockchain\Script\ScriptType;
+use Raptorio\Blockchain\Transaction\Factory\SignData;
 
 class P2shScriptDecorator extends ScriptHashDecorator
 {
@@ -30,7 +30,7 @@ class P2shScriptDecorator extends ScriptHashDecorator
     /**
      * @param KeyInterface ...$keys
      * @return ScriptAndSignData
-     * @throws \BitWasp\Bitcoin\Exceptions\P2shScriptException
+     * @throws \Raptorio\Blockchain\Exceptions\P2shScriptException
      */
     public function convertKey(KeyInterface ...$keys): ScriptAndSignData
     {

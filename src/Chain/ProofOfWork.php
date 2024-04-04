@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Chain;
+namespace Raptorio\Blockchain\Chain;
 
-use BitWasp\Bitcoin\Block\BlockHeaderInterface;
-use BitWasp\Bitcoin\Math\Math;
+use Raptorio\Blockchain\Block\BlockHeaderInterface;
+use Raptorio\Blockchain\Math\Math;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

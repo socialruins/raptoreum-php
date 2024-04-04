@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript;
+namespace Raptorio\Blockchain\Key\KeyToScript;
 
-use BitWasp\Bitcoin\Address\Address;
-use BitWasp\Bitcoin\Address\BaseAddressCreator;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\Factory\SignData;
+use Raptorio\Blockchain\Address\Address;
+use Raptorio\Blockchain\Address\BaseAddressCreator;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\Factory\SignData;
 
 class ScriptAndSignData
 {

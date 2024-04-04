@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Key\PrivateKey;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PrivateKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Key\PrivateKey;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PrivateKeySerializerInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Network\Slip132;
+namespace Raptorio\Blockchain\Network\Slip132;
 
-use BitWasp\Bitcoin\Key\Deterministic\Slip132\PrefixRegistry;
-use BitWasp\Bitcoin\Script\ScriptType;
+use Raptorio\Blockchain\Key\Deterministic\Slip132\PrefixRegistry;
+use Raptorio\Blockchain\Script\ScriptType;
 
 class BitcoinTestnetRegistry extends PrefixRegistry
 {

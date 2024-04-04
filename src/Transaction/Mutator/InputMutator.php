@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Mutator;
+namespace Raptorio\Blockchain\Transaction\Mutator;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\OutPoint;
-use BitWasp\Bitcoin\Transaction\OutPointInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\OutPoint;
+use Raptorio\Blockchain\Transaction\OutPointInterface;
+use Raptorio\Blockchain\Transaction\TransactionInput;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

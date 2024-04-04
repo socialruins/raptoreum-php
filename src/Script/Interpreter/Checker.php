@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Interpreter;
+namespace Raptorio\Blockchain\Script\Interpreter;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\SignatureHash\Hasher;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
-use BitWasp\Bitcoin\Transaction\SignatureHash\V1Hasher;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\SignatureHash\Hasher;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Transaction\SignatureHash\V1Hasher;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

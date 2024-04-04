@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Mutator;
+namespace Raptorio\Blockchain\Transaction\Mutator;
 
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
 
 class InputCollectionMutator extends AbstractCollectionMutator
 {

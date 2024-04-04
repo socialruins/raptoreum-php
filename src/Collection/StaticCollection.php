@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Collection;
+namespace Raptorio\Blockchain\Collection;
 
 use BitWasp\Buffertools\BufferInterface;
 
@@ -88,6 +88,7 @@ abstract class StaticCollection implements CollectionInterface
     /**
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->position = 0;
@@ -112,6 +113,7 @@ abstract class StaticCollection implements CollectionInterface
     /**
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         ++$this->position;
@@ -129,6 +131,7 @@ abstract class StaticCollection implements CollectionInterface
      * @param int $offset
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return array_key_exists($offset, $this->set);
@@ -137,6 +140,7 @@ abstract class StaticCollection implements CollectionInterface
     /**
      * @param int $offset
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         throw new \RuntimeException('Cannot unset from a Static Collection');
@@ -146,6 +150,7 @@ abstract class StaticCollection implements CollectionInterface
      * @param int $offset
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         if (!array_key_exists($offset, $this->set)) {
@@ -159,6 +164,7 @@ abstract class StaticCollection implements CollectionInterface
      * @param int $offset
      * @param mixed $value
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         throw new \RuntimeException('Cannot add to a Static Collection');

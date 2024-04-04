@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\ScriptInfo;
+namespace Raptorio\Blockchain\Script\ScriptInfo;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Parser\Operation;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptType;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Parser\Operation;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptType;
 use BitWasp\Buffertools\BufferInterface;
 
 class Multisig
@@ -102,10 +102,10 @@ class Multisig
         $nCode = $decoded[count($decoded) - 2]->getOp();
         $opCode = end($decoded)->getOp();
 
-        $requiredSigs = \BitWasp\Bitcoin\Script\decodeOpN($mCode);
+        $requiredSigs = \Raptorio\Blockchain\Script\decodeOpN($mCode);
         $publicKeyBuffers = [];
         foreach (array_slice($decoded, 1, -2) as $key) {
-            /** @var \BitWasp\Bitcoin\Script\Parser\Operation $key */
+            /** @var \Raptorio\Blockchain\Script\Parser\Operation $key */
             if (!$key->isPush()) {
                 throw new \RuntimeException('Malformed multisig script');
             }
@@ -114,7 +114,7 @@ class Multisig
             $publicKeyBuffers[] = $buffer;
         }
 
-        $keyCount = \BitWasp\Bitcoin\Script\decodeOpN($nCode);
+        $keyCount = \Raptorio\Blockchain\Script\decodeOpN($nCode);
         if ($keyCount !== count($publicKeyBuffers)) {
             throw new \LogicException('No public keys found in script');
         }

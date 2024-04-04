@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\SerializableInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\SerializableInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface BlockInterface extends SerializableInterface

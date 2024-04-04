@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Collection;
+namespace Raptorio\Blockchain\Collection;
 
 /**
  * @deprecated v2.0.0

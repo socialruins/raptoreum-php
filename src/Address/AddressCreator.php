@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
-use BitWasp\Bitcoin\Base58;
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Exceptions\UnrecognizedAddressException;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Script\Classifier\OutputClassifier;
-use BitWasp\Bitcoin\Script\P2shScript;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptType;
-use BitWasp\Bitcoin\Script\WitnessProgram;
-use BitWasp\Bitcoin\Script\WitnessScript;
+use Raptorio\Blockchain\Base58;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Exceptions\UnrecognizedAddressException;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Script\Classifier\OutputClassifier;
+use Raptorio\Blockchain\Script\P2shScript;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptType;
+use Raptorio\Blockchain\Script\WitnessProgram;
+use Raptorio\Blockchain\Script\WitnessScript;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

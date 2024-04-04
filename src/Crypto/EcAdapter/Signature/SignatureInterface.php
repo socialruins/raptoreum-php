@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Signature;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Signature;
 
-use BitWasp\Bitcoin\SerializableInterface;
+use Raptorio\Blockchain\SerializableInterface;
 
 interface SignatureInterface extends SerializableInterface
 {

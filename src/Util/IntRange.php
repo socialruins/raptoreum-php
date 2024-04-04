@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Util;
+namespace Raptorio\Blockchain\Util;
 
 class IntRange
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Exceptions\MerkleTreeEmpty;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Exceptions\MerkleTreeEmpty;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use Pleo\Merkle\FixedSizeTree;

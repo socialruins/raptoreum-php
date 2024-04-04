@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Crypto\Random\RbgInterface;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Crypto\Random\RbgInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface PrivateKeyInterface extends KeyInterface

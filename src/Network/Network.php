@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Network;
+namespace Raptorio\Blockchain\Network;
 
-use BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter;
-use BitWasp\Bitcoin\Exceptions\MissingBase58Prefix;
-use BitWasp\Bitcoin\Exceptions\MissingBech32Prefix;
-use BitWasp\Bitcoin\Exceptions\MissingBip32Prefix;
-use BitWasp\Bitcoin\Exceptions\MissingNetworkParameter;
+use Raptorio\Blockchain\Exceptions\InvalidNetworkParameter;
+use Raptorio\Blockchain\Exceptions\MissingBase58Prefix;
+use Raptorio\Blockchain\Exceptions\MissingBech32Prefix;
+use Raptorio\Blockchain\Exceptions\MissingBip32Prefix;
+use Raptorio\Blockchain\Exceptions\MissingNetworkParameter;
 
 class Network implements NetworkInterface
 {

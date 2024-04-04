@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript;
+namespace Raptorio\Blockchain\Key\KeyToScript;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
 
 abstract class ScriptDataFactory
 {

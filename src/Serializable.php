@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin;
+namespace Raptorio\Blockchain;
 
 abstract class Serializable implements SerializableInterface
 {

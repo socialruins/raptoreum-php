@@ -1,13 +1,13 @@
 <?php
 
-namespace BitWasp\Bitcoin\Script\Consensus;
+namespace Raptorio\Blockchain\Script\Consensus;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Script\Interpreter\Checker;
-use BitWasp\Bitcoin\Script\Interpreter\Interpreter;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Script\Interpreter\Checker;
+use Raptorio\Blockchain\Script\Interpreter\Interpreter;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 
 class NativeConsensus implements ConsensusInterface
 {

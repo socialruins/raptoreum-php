@@ -1,11 +1,11 @@
 <?php
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Signature;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Signature;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\CompactSignatureSerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\CompactSignatureSerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Exceptions\ParserOutOfRange;
 use BitWasp\Buffertools\Parser;

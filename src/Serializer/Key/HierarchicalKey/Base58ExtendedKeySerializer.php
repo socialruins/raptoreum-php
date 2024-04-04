@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Key\HierarchicalKey;
+namespace Raptorio\Blockchain\Serializer\Key\HierarchicalKey;
 
-use BitWasp\Bitcoin\Base58;
-use BitWasp\Bitcoin\Key\Deterministic\HierarchicalKey;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Base58;
+use Raptorio\Blockchain\Key\Deterministic\HierarchicalKey;
+use Raptorio\Blockchain\Network\NetworkInterface;
 
 class Base58ExtendedKeySerializer
 {
@@ -38,7 +38,7 @@ class Base58ExtendedKeySerializer
      * @param NetworkInterface $network
      * @param string $base58
      * @return HierarchicalKey
-     * @throws \BitWasp\Bitcoin\Exceptions\Base58ChecksumFailure
+     * @throws \Raptorio\Blockchain\Exceptions\Base58ChecksumFailure
      * @throws \BitWasp\Buffertools\Exceptions\ParserOutOfRange
      */
     public function parse(NetworkInterface $network, string $base58): HierarchicalKey

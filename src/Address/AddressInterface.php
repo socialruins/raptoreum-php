@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Script\ScriptInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface AddressInterface

@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Key;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Key\PrivateKeySerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Signature\CompactSignature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Signature\Signature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\Key;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
-use BitWasp\Bitcoin\Crypto\Random\RbgInterface;
-use BitWasp\Bitcoin\Exceptions\InvalidPrivateKey;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Serializer\Key\PrivateKey\WifPrivateKeySerializer;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Key\PrivateKeySerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Signature\CompactSignature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Signature\Signature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\Key;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Crypto\Random\RbgInterface;
+use Raptorio\Blockchain\Exceptions\InvalidPrivateKey;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Serializer\Key\PrivateKey\WifPrivateKeySerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

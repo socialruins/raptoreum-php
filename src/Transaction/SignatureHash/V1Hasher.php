@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\SignatureHash;
+namespace Raptorio\Blockchain\Transaction\SignatureHash;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Serializer\Transaction\OutPointSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\OutPointSerializerInterface;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionOutputSerializer;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Serializer\Transaction\OutPointSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\OutPointSerializerInterface;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionOutputSerializer;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Buffertools;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Path;
+namespace Raptorio\Blockchain\Script\Path;
 
-use BitWasp\Bitcoin\Script\Parser\Operation;
+use Raptorio\Blockchain\Script\Parser\Operation;
 
 class PathTracer
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript\Decorator;
+namespace Raptorio\Blockchain\Key\KeyToScript\Decorator;
 
-use BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\KeyToScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\KeyToScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
 
 abstract class ScriptHashDecorator extends ScriptDataFactory
 {

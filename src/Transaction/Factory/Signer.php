@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
-use BitWasp\Bitcoin\Exceptions\SignerException;
-use BitWasp\Bitcoin\Serializer\Signature\TransactionSignatureSerializer;
-use BitWasp\Bitcoin\Transaction\Factory\Checker\CheckerCreator;
-use BitWasp\Bitcoin\Transaction\Factory\Checker\CheckerCreatorBase;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
-use BitWasp\Bitcoin\Transaction\TransactionFactory;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
+use Raptorio\Blockchain\Exceptions\SignerException;
+use Raptorio\Blockchain\Serializer\Signature\TransactionSignatureSerializer;
+use Raptorio\Blockchain\Transaction\Factory\Checker\CheckerCreator;
+use Raptorio\Blockchain\Transaction\Factory\Checker\CheckerCreatorBase;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Transaction\TransactionFactory;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 
 class Signer
 {

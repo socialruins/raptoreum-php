@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\Random;
+namespace Raptorio\Blockchain\Crypto\Random;
 
-use BitWasp\Bitcoin\Exceptions\RandomBytesFailure;
+use Raptorio\Blockchain\Exceptions\RandomBytesFailure;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

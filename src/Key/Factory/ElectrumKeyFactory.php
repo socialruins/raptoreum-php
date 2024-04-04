@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Factory;
+namespace Raptorio\Blockchain\Key\Factory;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Key\Deterministic\ElectrumKey;
-use BitWasp\Bitcoin\Mnemonic\Electrum\ElectrumWordListInterface;
-use BitWasp\Bitcoin\Mnemonic\MnemonicFactory;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Key\Deterministic\ElectrumKey;
+use Raptorio\Blockchain\Mnemonic\Electrum\ElectrumWordListInterface;
+use Raptorio\Blockchain\Mnemonic\MnemonicFactory;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

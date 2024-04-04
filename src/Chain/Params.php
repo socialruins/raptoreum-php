@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Chain;
+namespace Raptorio\Blockchain\Chain;
 
-use BitWasp\Bitcoin\Block\Block;
-use BitWasp\Bitcoin\Block\BlockHeader;
-use BitWasp\Bitcoin\Block\BlockHeaderInterface;
-use BitWasp\Bitcoin\Block\BlockInterface;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\ScriptFactory;
-use BitWasp\Bitcoin\Transaction\Factory\TxBuilder;
+use Raptorio\Blockchain\Block\Block;
+use Raptorio\Blockchain\Block\BlockHeader;
+use Raptorio\Blockchain\Block\BlockHeaderInterface;
+use Raptorio\Blockchain\Block\BlockInterface;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\ScriptFactory;
+use Raptorio\Blockchain\Transaction\Factory\TxBuilder;
 use BitWasp\Buffertools\Buffer;
 
 class Params implements ParamsInterface

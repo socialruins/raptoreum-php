@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionOutputSerializer;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionOutputSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class TransactionOutput extends Serializable implements TransactionOutputInterface
@@ -71,7 +71,7 @@ class TransactionOutput extends Serializable implements TransactionOutputInterfa
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\SerializableInterface::getBuffer()
+     * @see \Raptorio\Blockchain\SerializableInterface::getBuffer()
      */
     public function getBuffer(): BufferInterface
     {

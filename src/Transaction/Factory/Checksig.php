@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Script\ScriptInfo\Multisig;
-use BitWasp\Bitcoin\Script\ScriptInfo\PayToPubkey;
-use BitWasp\Bitcoin\Script\ScriptInfo\PayToPubkeyHash;
-use BitWasp\Bitcoin\Script\ScriptType;
-use BitWasp\Bitcoin\Serializer\Signature\TransactionSignatureSerializer;
-use BitWasp\Bitcoin\Signature\TransactionSignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Script\ScriptInfo\Multisig;
+use Raptorio\Blockchain\Script\ScriptInfo\PayToPubkey;
+use Raptorio\Blockchain\Script\ScriptInfo\PayToPubkeyHash;
+use Raptorio\Blockchain\Script\ScriptType;
+use Raptorio\Blockchain\Serializer\Signature\TransactionSignatureSerializer;
+use Raptorio\Blockchain\Signature\TransactionSignatureInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 abstract class Key extends Serializable implements KeyInterface

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Signature;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Signature;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Signature\DerSignatureSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Signature\DerSignatureSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\BufferInterface;
 
 class Signature extends Serializable implements SignatureInterface

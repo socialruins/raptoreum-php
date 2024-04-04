@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\MessageSigner;
+namespace Raptorio\Blockchain\Serializer\MessageSigner;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\CompactSignatureSerializerInterface;
-use BitWasp\Bitcoin\MessageSigner\SignedMessage;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\CompactSignatureSerializerInterface;
+use Raptorio\Blockchain\MessageSigner\SignedMessage;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

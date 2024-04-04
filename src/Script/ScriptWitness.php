@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Collection\StaticBufferCollection;
-use BitWasp\Bitcoin\Serializer\Script\ScriptWitnessSerializer;
+use Raptorio\Blockchain\Collection\StaticBufferCollection;
+use Raptorio\Blockchain\Serializer\Script\ScriptWitnessSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class ScriptWitness extends StaticBufferCollection implements ScriptWitnessInterface

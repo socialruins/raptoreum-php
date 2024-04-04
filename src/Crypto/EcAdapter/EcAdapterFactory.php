@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter;
+namespace Raptorio\Blockchain\Crypto\EcAdapter;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter as PhpEcc;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter as Secp256k1;
-use BitWasp\Bitcoin\Math\Math;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter as PhpEcc;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter as Secp256k1;
+use Raptorio\Blockchain\Math\Math;
 use Composer\Semver\Semver;
 use Mdanter\Ecc\Primitives\GeneratorPoint;
 

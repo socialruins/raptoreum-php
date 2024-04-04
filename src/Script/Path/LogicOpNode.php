@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Path;
+namespace Raptorio\Blockchain\Script\Path;
 
 class LogicOpNode
 {

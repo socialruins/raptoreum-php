@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\SerializableInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\SerializableInterface;
 
 interface TransactionOutputInterface extends SerializableInterface
 {

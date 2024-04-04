@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Adapter;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Adapter;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
-use BitWasp\Bitcoin\Math\Math;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key\PrivateKey;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Math\Math;
 use BitWasp\Buffertools\BufferInterface;
 use Mdanter\Ecc\Primitives\GeneratorPoint;
 use Mdanter\Ecc\Primitives\PointInterface;

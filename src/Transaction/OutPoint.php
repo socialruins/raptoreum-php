@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Exceptions\InvalidHashLengthException;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Transaction\OutPointSerializer;
-use BitWasp\Bitcoin\Util\IntRange;
+use Raptorio\Blockchain\Exceptions\InvalidHashLengthException;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Transaction\OutPointSerializer;
+use Raptorio\Blockchain\Util\IntRange;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

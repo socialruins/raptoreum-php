@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Utxo;
+namespace Raptorio\Blockchain\Utxo;
 
-use BitWasp\Bitcoin\Transaction\OutPointInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Transaction\OutPointInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 
 interface UtxoInterface
 {

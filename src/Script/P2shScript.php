@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Address\ScriptHashAddress;
-use BitWasp\Bitcoin\Exceptions\P2shScriptException;
+use Raptorio\Blockchain\Address\ScriptHashAddress;
+use Raptorio\Blockchain\Exceptions\P2shScriptException;
 use BitWasp\Buffertools\BufferInterface;
 
 class P2shScript extends Script

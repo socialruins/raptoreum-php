@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Signature;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Signature;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Signature\CompactSignatureSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\Secp256k1\Serializer\Signature\CompactSignatureSerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

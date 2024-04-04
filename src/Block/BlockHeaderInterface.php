@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\SerializableInterface;
+use Raptorio\Blockchain\SerializableInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface BlockHeaderInterface extends SerializableInterface

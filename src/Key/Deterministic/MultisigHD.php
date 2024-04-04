@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic;
+namespace Raptorio\Blockchain\Key\Deterministic;
 
-use BitWasp\Bitcoin\Address\Address;
-use BitWasp\Bitcoin\Address\BaseAddressCreator;
-use BitWasp\Bitcoin\Exceptions\InvalidDerivationException;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptAndSignData;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
-use BitWasp\Bitcoin\Script\ScriptType;
+use Raptorio\Blockchain\Address\Address;
+use Raptorio\Blockchain\Address\BaseAddressCreator;
+use Raptorio\Blockchain\Exceptions\InvalidDerivationException;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptAndSignData;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Script\ScriptType;
 
 /**
  * Implements a multisignature HD node, which like HierarchicalKey
@@ -44,7 +44,7 @@ class MultisigHD
      * @param ScriptDataFactory $scriptDataFactory
      * @param HierarchicalKey ...$keys
      */
-    public function __construct(ScriptDataFactory $scriptDataFactory, HierarchicalKey... $keys)
+    public function __construct(ScriptDataFactory $scriptDataFactory, HierarchicalKey ...$keys)
     {
         if (count($keys) < 1) {
             throw new \RuntimeException('Must have at least one HierarchicalKey for Multisig HD Script');

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Mutator;
+namespace Raptorio\Blockchain\Transaction\Mutator;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutput;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutput;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 
 class OutputMutator
 {

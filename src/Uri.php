@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin;
+namespace Raptorio\Blockchain;
 
-use BitWasp\Bitcoin\Address\AddressInterface;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Address\AddressInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
 
 class Uri
 {

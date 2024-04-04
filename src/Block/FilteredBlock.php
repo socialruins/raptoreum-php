@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
-use BitWasp\Bitcoin\Serializer\Block\FilteredBlockSerializer;
-use BitWasp\Bitcoin\Serializer\Block\PartialMerkleTreeSerializer;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Serializer\Block\FilteredBlockSerializer;
+use Raptorio\Blockchain\Serializer\Block\PartialMerkleTreeSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class FilteredBlock extends Serializable

@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Interpreter;
+namespace Raptorio\Blockchain\Script\Interpreter;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Exceptions\ScriptRuntimeException;
-use BitWasp\Bitcoin\Exceptions\SignatureNotCanonical;
-use BitWasp\Bitcoin\Script\Classifier\OutputClassifier;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Script;
-use BitWasp\Bitcoin\Script\ScriptFactory;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptWitness;
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Script\WitnessProgram;
-use BitWasp\Bitcoin\Signature\TransactionSignature;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Exceptions\ScriptRuntimeException;
+use Raptorio\Blockchain\Exceptions\SignatureNotCanonical;
+use Raptorio\Blockchain\Script\Classifier\OutputClassifier;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Script;
+use Raptorio\Blockchain\Script\ScriptFactory;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptWitness;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Script\WitnessProgram;
+use Raptorio\Blockchain\Signature\TransactionSignature;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -27,7 +27,7 @@ class Interpreter implements InterpreterInterface
 {
 
     /**
-     * @var \BitWasp\Bitcoin\Math\Math
+     * @var \Raptorio\Blockchain\Math\Math
      */
     private $math;
 
@@ -426,7 +426,7 @@ class Interpreter implements InterpreterInterface
                         case Opcodes::OP_14:
                         case Opcodes::OP_15:
                         case Opcodes::OP_16:
-                            $num = \BitWasp\Bitcoin\Script\decodeOpN($opCode);
+                            $num = \Raptorio\Blockchain\Script\decodeOpN($opCode);
                             $mainStack->push(Number::int($num)->getBuffer());
                             break;
 

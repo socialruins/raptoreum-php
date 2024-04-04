@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Parser;
+namespace Raptorio\Blockchain\Script\Parser;
 
-use BitWasp\Bitcoin\Script\Opcodes;
+use Raptorio\Blockchain\Script\Opcodes;
 use BitWasp\Buffertools\BufferInterface;
 
 class Operation

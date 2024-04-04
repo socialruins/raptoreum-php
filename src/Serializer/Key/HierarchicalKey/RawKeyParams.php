@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Key\HierarchicalKey;
+namespace Raptorio\Blockchain\Serializer\Key\HierarchicalKey;
 
 use BitWasp\Buffertools\BufferInterface;
 

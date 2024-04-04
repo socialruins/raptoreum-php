@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Bloom\BloomFilter;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
-use BitWasp\Bitcoin\Serializer\Block\BlockSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionSerializer;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Bloom\BloomFilter;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Serializer\Block\BlockSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionSerializer;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 class Block extends Serializable implements BlockInterface
@@ -50,7 +50,7 @@ class Block extends Serializable implements BlockInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockInterface::getHeader()
+     * @see \Raptorio\Blockchain\Block\BlockInterface::getHeader()
      */
     public function getHeader(): BlockHeaderInterface
     {
@@ -59,8 +59,8 @@ class Block extends Serializable implements BlockInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockInterface::getMerkleRoot()
-     * @throws \BitWasp\Bitcoin\Exceptions\MerkleTreeEmpty
+     * @see \Raptorio\Blockchain\Block\BlockInterface::getMerkleRoot()
+     * @throws \Raptorio\Blockchain\Exceptions\MerkleTreeEmpty
      */
     public function getMerkleRoot(): BufferInterface
     {
@@ -72,7 +72,7 @@ class Block extends Serializable implements BlockInterface
     }
 
     /**
-     * @see \BitWasp\Bitcoin\Block\BlockInterface::getTransactions()
+     * @see \Raptorio\Blockchain\Block\BlockInterface::getTransactions()
      * @return TransactionInterface[]
      */
     public function getTransactions(): array
@@ -81,7 +81,7 @@ class Block extends Serializable implements BlockInterface
     }
 
     /**
-     * @see \BitWasp\Bitcoin\Block\BlockInterface::getTransaction()
+     * @see \Raptorio\Blockchain\Block\BlockInterface::getTransaction()
      * @param int $i
      * @return TransactionInterface
      */

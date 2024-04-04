@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Script\ScriptFactory;
-use BitWasp\Bitcoin\Script\ScriptInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Script\ScriptFactory;
+use Raptorio\Blockchain\Script\ScriptInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 class ScriptHashAddress extends Base58Address

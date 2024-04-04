@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Path;
+namespace Raptorio\Blockchain\Script\Path;
 
-use BitWasp\Bitcoin\Script\Interpreter\Stack;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\Interpreter\Stack;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\ScriptInterface;
 
 class BranchInterpreter
 {

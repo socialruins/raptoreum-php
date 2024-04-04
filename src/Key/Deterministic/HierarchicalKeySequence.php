@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic;
+namespace Raptorio\Blockchain\Key\Deterministic;
 
 class HierarchicalKeySequence
 {
@@ -64,7 +64,7 @@ class HierarchicalKeySequence
      * @param string ...$parts
      * @return int[]
      */
-    private function decodeDerivation(string... $parts): array
+    private function decodeDerivation(string ...$parts): array
     {
         $indices = [];
         foreach ($parts as $i => $part) {

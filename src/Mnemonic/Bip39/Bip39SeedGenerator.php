@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic\Bip39;
+namespace Raptorio\Blockchain\Mnemonic\Bip39;
 
-use BitWasp\Bitcoin\Crypto\Hash;
+use Raptorio\Blockchain\Crypto\Hash;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

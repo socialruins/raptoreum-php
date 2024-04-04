@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Transaction;
+namespace Raptorio\Blockchain\Serializer\Transaction;
 
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Script;
-use BitWasp\Bitcoin\Serializer\Types;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Script;
+use Raptorio\Blockchain\Serializer\Types;
+use Raptorio\Blockchain\Transaction\TransactionInput;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

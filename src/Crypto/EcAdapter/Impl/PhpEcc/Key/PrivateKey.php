@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Key\PrivateKeySerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\CompactSignatureInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Signature\Signature;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\Key;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Crypto\Random\RbgInterface;
-use BitWasp\Bitcoin\Crypto\Random\Rfc6979;
-use BitWasp\Bitcoin\Exceptions\InvalidPrivateKey;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Serializer\Key\PrivateKey\WifPrivateKeySerializer;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Adapter\EcAdapter;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Serializer\Key\PrivateKeySerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Signature\CompactSignature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\CompactSignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Signature\Signature;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\Key;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Crypto\Random\RbgInterface;
+use Raptorio\Blockchain\Crypto\Random\Rfc6979;
+use Raptorio\Blockchain\Exceptions\InvalidPrivateKey;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Serializer\Key\PrivateKey\WifPrivateKeySerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use Mdanter\Ecc\Crypto\Signature\Signer;

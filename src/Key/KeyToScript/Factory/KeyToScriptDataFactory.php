@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\KeyToScript\Factory;
+namespace Raptorio\Blockchain\Key\KeyToScript\Factory;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\KeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptAndSignData;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\KeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptAndSignData;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
 
 abstract class KeyToScriptDataFactory extends ScriptDataFactory
 {
@@ -42,7 +42,7 @@ abstract class KeyToScriptDataFactory extends ScriptDataFactory
      * @param KeyInterface ...$keys
      * @return ScriptAndSignData
      */
-    public function convertKey(KeyInterface... $keys): ScriptAndSignData
+    public function convertKey(KeyInterface ...$keys): ScriptAndSignData
     {
         $pubs = [];
         foreach ($keys as $key) {

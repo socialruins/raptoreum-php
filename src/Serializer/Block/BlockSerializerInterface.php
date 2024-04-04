@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Block;
+namespace Raptorio\Blockchain\Serializer\Block;
 
-use BitWasp\Bitcoin\Block\BlockInterface;
+use Raptorio\Blockchain\Block\BlockInterface;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Exceptions\ParserOutOfRange;
 use BitWasp\Buffertools\Parser;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Exceptions\InvalidHashLengthException;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Block\BlockHeaderSerializer;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Exceptions\InvalidHashLengthException;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Block\BlockHeaderSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class BlockHeader extends Serializable implements BlockHeaderInterface
@@ -83,7 +83,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
      * Get the version for this block
      *
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getVersion()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getVersion()
      */
     public function getVersion(): int
     {
@@ -100,7 +100,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getPrevBlock()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getPrevBlock()
      */
     public function getPrevBlock(): BufferInterface
     {
@@ -109,7 +109,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getMerkleRoot()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getMerkleRoot()
      */
     public function getMerkleRoot(): BufferInterface
     {
@@ -118,7 +118,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getBits()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getBits()
      */
     public function getBits(): int
     {
@@ -127,7 +127,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
 
     /**
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getNonce()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getNonce()
      */
     public function getNonce(): int
     {
@@ -138,7 +138,7 @@ class BlockHeader extends Serializable implements BlockHeaderInterface
      * Get the timestamp for this block
      *
      * {@inheritdoc}
-     * @see \BitWasp\Bitcoin\Block\BlockHeaderInterface::getTimestamp()
+     * @see \Raptorio\Blockchain\Block\BlockHeaderInterface::getTimestamp()
      */
     public function getTimestamp(): int
     {

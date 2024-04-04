@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin;
+namespace Raptorio\Blockchain;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Exceptions\Base58ChecksumFailure;
-use BitWasp\Bitcoin\Exceptions\Base58InvalidCharacter;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Exceptions\Base58ChecksumFailure;
+use Raptorio\Blockchain\Exceptions\Base58InvalidCharacter;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Buffertools;

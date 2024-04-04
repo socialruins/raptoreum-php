@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Transaction\OutPointSerializer;
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionInputSerializer;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Transaction\OutPointSerializer;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionInputSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class TransactionInput extends Serializable implements TransactionInputInterface

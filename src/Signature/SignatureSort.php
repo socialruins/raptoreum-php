@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Signature;
+namespace Raptorio\Blockchain\Signature;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 class SignatureSort implements SignatureSortInterface
@@ -25,8 +25,8 @@ class SignatureSort implements SignatureSortInterface
     }
 
     /**
-     * @param \BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface[] $signatures
-     * @param \BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface[] $publicKeys
+     * @param \Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface[] $signatures
+     * @param \Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface[] $publicKeys
      * @param BufferInterface $messageHash
      * @return \SplObjectStorage
      */

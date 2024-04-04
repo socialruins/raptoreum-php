@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Chain;
+namespace Raptorio\Blockchain\Chain;
 
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Chain\BlockLocatorSerializer;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Chain\BlockLocatorSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class BlockLocator extends Serializable

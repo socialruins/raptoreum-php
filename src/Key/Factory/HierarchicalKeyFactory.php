@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Factory;
+namespace Raptorio\Blockchain\Key\Factory;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Crypto\Random\Random;
-use BitWasp\Bitcoin\Key\Deterministic\HierarchicalKey;
-use BitWasp\Bitcoin\Key\Deterministic\MultisigHD;
-use BitWasp\Bitcoin\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
-use BitWasp\Bitcoin\Network\NetworkInterface;
-use BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer;
-use BitWasp\Bitcoin\Serializer\Key\HierarchicalKey\ExtendedKeySerializer;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Crypto\Random\Random;
+use Raptorio\Blockchain\Key\Deterministic\HierarchicalKey;
+use Raptorio\Blockchain\Key\Deterministic\MultisigHD;
+use Raptorio\Blockchain\Key\KeyToScript\Factory\P2pkhScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Network\NetworkInterface;
+use Raptorio\Blockchain\Serializer\Key\HierarchicalKey\Base58ExtendedKeySerializer;
+use Raptorio\Blockchain\Serializer\Key\HierarchicalKey\ExtendedKeySerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -56,7 +56,7 @@ class HierarchicalKeyFactory
      * @param Random $random
      * @param ScriptDataFactory|null $scriptDataFactory
      * @return HierarchicalKey
-     * @throws \BitWasp\Bitcoin\Exceptions\RandomBytesFailure
+     * @throws \Raptorio\Blockchain\Exceptions\RandomBytesFailure
      * @throws \Exception
      */
     public function generateMasterKey(Random $random, ScriptDataFactory $scriptDataFactory = null): HierarchicalKey
@@ -86,7 +86,7 @@ class HierarchicalKeyFactory
      * @param string $extendedKey
      * @param NetworkInterface|null $network
      * @return HierarchicalKey
-     * @throws \BitWasp\Bitcoin\Exceptions\Base58ChecksumFailure
+     * @throws \Raptorio\Blockchain\Exceptions\Base58ChecksumFailure
      * @throws \BitWasp\Buffertools\Exceptions\ParserOutOfRange
      */
     public function fromExtended(string $extendedKey, NetworkInterface $network = null): HierarchicalKey

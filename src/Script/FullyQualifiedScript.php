@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Exceptions\MissingScriptException;
-use BitWasp\Bitcoin\Exceptions\ScriptHashMismatch;
-use BitWasp\Bitcoin\Exceptions\ScriptQualificationError;
-use BitWasp\Bitcoin\Exceptions\SuperfluousScriptData;
-use BitWasp\Bitcoin\Script\Classifier\OutputClassifier;
-use BitWasp\Bitcoin\Script\Classifier\OutputData;
-use BitWasp\Bitcoin\Script\Interpreter\Stack;
-use BitWasp\Bitcoin\Transaction\Factory\SignData;
-use BitWasp\Bitcoin\Transaction\Factory\SigValues;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Exceptions\MissingScriptException;
+use Raptorio\Blockchain\Exceptions\ScriptHashMismatch;
+use Raptorio\Blockchain\Exceptions\ScriptQualificationError;
+use Raptorio\Blockchain\Exceptions\SuperfluousScriptData;
+use Raptorio\Blockchain\Script\Classifier\OutputClassifier;
+use Raptorio\Blockchain\Script\Classifier\OutputData;
+use Raptorio\Blockchain\Script\Interpreter\Stack;
+use Raptorio\Blockchain\Transaction\Factory\SignData;
+use Raptorio\Blockchain\Transaction\Factory\SigValues;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
 use BitWasp\Buffertools\BufferInterface;
 
 class FullyQualifiedScript

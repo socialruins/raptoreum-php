@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Serializer\Transaction\TransactionSerializer;
-use BitWasp\Bitcoin\Transaction\Factory\TxBuilder;
-use BitWasp\Bitcoin\Transaction\Mutator\TxMutator;
+use Raptorio\Blockchain\Serializer\Transaction\TransactionSerializer;
+use Raptorio\Blockchain\Transaction\Factory\TxBuilder;
+use Raptorio\Blockchain\Transaction\Mutator\TxMutator;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

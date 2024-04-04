@@ -13,13 +13,15 @@
   ],
   "autoload": {
     "psr-4": {
-      "BitWasp\\Bitcoin\\": "src/"
+      "Raptorio\\Blockchain\\": "src/"
     },
-    "files": ["src/Script/functions.php"]
+    "files": [
+      "src/Script/functions.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
-      "BitWasp\\Bitcoin\\Tests\\": "tests/"
+      "Raptorio\\Blockchain\\Tests\\": "tests/"
     }
   },
   "require": {

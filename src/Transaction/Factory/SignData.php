@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\WitnessScript;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\WitnessScript;
 
 class SignData
 {

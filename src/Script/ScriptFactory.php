@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Script\Consensus\BitcoinConsensus;
-use BitWasp\Bitcoin\Script\Consensus\ConsensusInterface;
-use BitWasp\Bitcoin\Script\Consensus\NativeConsensus;
-use BitWasp\Bitcoin\Script\Factory\OutputScriptFactory;
-use BitWasp\Bitcoin\Script\Factory\ScriptCreator;
-use BitWasp\Bitcoin\Script\Parser\Operation;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Script\Consensus\BitcoinConsensus;
+use Raptorio\Blockchain\Script\Consensus\ConsensusInterface;
+use Raptorio\Blockchain\Script\Consensus\NativeConsensus;
+use Raptorio\Blockchain\Script\Factory\OutputScriptFactory;
+use Raptorio\Blockchain\Script\Factory\ScriptCreator;
+use Raptorio\Blockchain\Script\Parser\Operation;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -76,7 +76,7 @@ class ScriptFactory
 
             $first = ord($buffer->getBinary()[0]);
             if ($size === 1 && $first >= 1 && $first <= 16) {
-                return \BitWasp\Bitcoin\Script\encodeOpN($first);
+                return \Raptorio\Blockchain\Script\encodeOpN($first);
             } else {
                 return $buffer;
             }
@@ -84,7 +84,7 @@ class ScriptFactory
     }
 
     /**
-     * @param int[]|\BitWasp\Bitcoin\Script\Interpreter\Number[]|BufferInterface[] $sequence
+     * @param int[]|\Raptorio\Blockchain\Script\Interpreter\Number[]|BufferInterface[] $sequence
      * @return ScriptInterface
      */
     public static function sequence(array $sequence): ScriptInterface

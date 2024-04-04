@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Script;
+namespace Raptorio\Blockchain\Serializer\Script;
 
-use BitWasp\Bitcoin\Script\ScriptWitness;
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Script\ScriptWitness;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic\Slip132;
+namespace Raptorio\Blockchain\Key\Deterministic\Slip132;
 
 class PrefixRegistry
 {

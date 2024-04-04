@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface PrivateKeySerializerInterface

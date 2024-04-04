@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Bip69;
+namespace Raptorio\Blockchain\Transaction\Bip69;
 
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Transaction\Mutator\TxMutator;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Transaction\Mutator\TxMutator;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 
 class Bip69
 {

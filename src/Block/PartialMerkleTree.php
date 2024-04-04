@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Block;
+namespace Raptorio\Blockchain\Block;
 
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Block\PartialMerkleTreeSerializer;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Block\PartialMerkleTreeSerializer;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Buffertools;

@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Interpreter;
+namespace Raptorio\Blockchain\Script\Interpreter;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
-use BitWasp\Bitcoin\Exceptions\ScriptRuntimeException;
-use BitWasp\Bitcoin\Exceptions\SignatureNotCanonical;
-use BitWasp\Bitcoin\Locktime;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Serializer\Signature\TransactionSignatureSerializer;
-use BitWasp\Bitcoin\Signature\TransactionSignature;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Impl\PhpEcc\Key\PublicKey;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
+use Raptorio\Blockchain\Exceptions\ScriptRuntimeException;
+use Raptorio\Blockchain\Exceptions\SignatureNotCanonical;
+use Raptorio\Blockchain\Locktime;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Serializer\Signature\TransactionSignatureSerializer;
+use Raptorio\Blockchain\Signature\TransactionSignature;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Transaction\TransactionInput;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 abstract class CheckerBase
@@ -158,7 +158,7 @@ abstract class CheckerBase
      * @param BufferInterface $signature
      * @param int $flags
      * @return $this
-     * @throws \BitWasp\Bitcoin\Exceptions\ScriptRuntimeException
+     * @throws \Raptorio\Blockchain\Exceptions\ScriptRuntimeException
      */
     public function checkSignatureEncoding(BufferInterface $signature, int $flags)
     {
@@ -226,10 +226,10 @@ abstract class CheckerBase
     }
 
     /**
-     * @param \BitWasp\Bitcoin\Script\Interpreter\Number $scriptLockTime
+     * @param \Raptorio\Blockchain\Script\Interpreter\Number $scriptLockTime
      * @return bool
      */
-    public function checkLockTime(\BitWasp\Bitcoin\Script\Interpreter\Number $scriptLockTime): bool
+    public function checkLockTime(\Raptorio\Blockchain\Script\Interpreter\Number $scriptLockTime): bool
     {
         $input = $this->transaction->getInput($this->nInput);
         $nLockTime = $scriptLockTime->getInt();
@@ -253,10 +253,10 @@ abstract class CheckerBase
     }
 
     /**
-     * @param \BitWasp\Bitcoin\Script\Interpreter\Number $sequence
+     * @param \Raptorio\Blockchain\Script\Interpreter\Number $sequence
      * @return bool
      */
-    public function checkSequence(\BitWasp\Bitcoin\Script\Interpreter\Number $sequence): bool
+    public function checkSequence(\Raptorio\Blockchain\Script\Interpreter\Number $sequence): bool
     {
         $txSequence = $this->transaction->getInput($this->nInput)->getSequence();
         if ($this->transaction->getVersion() < 2) {

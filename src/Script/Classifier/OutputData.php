@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script\Classifier;
+namespace Raptorio\Blockchain\Script\Classifier;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptType;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptType;
 
 class OutputData
 {

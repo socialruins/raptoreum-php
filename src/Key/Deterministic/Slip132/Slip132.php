@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic\Slip132;
+namespace Raptorio\Blockchain\Key\Deterministic\Slip132;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Key\Deterministic\HdPrefix\ScriptPrefix;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
-use BitWasp\Bitcoin\Key\KeyToScript\KeyToScriptHelper;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Key\Deterministic\HdPrefix\ScriptPrefix;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Key\KeyToScript\KeyToScriptHelper;
 
 class Slip132
 {
@@ -25,7 +25,7 @@ class Slip132
      * @param PrefixRegistry $registry
      * @param ScriptDataFactory $factory
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     private function loadPrefix(PrefixRegistry $registry, ScriptDataFactory $factory): ScriptPrefix
     {
@@ -37,7 +37,7 @@ class Slip132
      * xpub on bitcoin
      * @param PrefixRegistry $registry
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     public function p2pkh(PrefixRegistry $registry): ScriptPrefix
     {
@@ -48,8 +48,8 @@ class Slip132
      * ypub on bitcoin
      * @param PrefixRegistry $registry
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     public function p2shP2wpkh(PrefixRegistry $registry): ScriptPrefix
     {
@@ -63,8 +63,8 @@ class Slip132
      * @param bool $sortKeys
      * @param PrefixRegistry $registry
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     public function p2shP2wshMultisig(int $m, int $n, bool $sortKeys, PrefixRegistry $registry): ScriptPrefix
     {
@@ -75,7 +75,7 @@ class Slip132
      * zpub on bitcoin
      * @param PrefixRegistry $registry
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     public function p2wpkh(PrefixRegistry $registry): ScriptPrefix
     {
@@ -89,8 +89,8 @@ class Slip132
      * @param bool $sortKeys
      * @param PrefixRegistry $registry
      * @return ScriptPrefix
-     * @throws \BitWasp\Bitcoin\Exceptions\DisallowedScriptDataFactoryException
-     * @throws \BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter
+     * @throws \Raptorio\Blockchain\Exceptions\DisallowedScriptDataFactoryException
+     * @throws \Raptorio\Blockchain\Exceptions\InvalidNetworkParameter
      */
     public function p2wshMultisig(int $m, int $n, bool $sortKeys, PrefixRegistry $registry): ScriptPrefix
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace BitWasp\Bitcoin\Script\Consensus;
+namespace Raptorio\Blockchain\Script\Consensus;
 
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 
 interface ConsensusInterface
 {

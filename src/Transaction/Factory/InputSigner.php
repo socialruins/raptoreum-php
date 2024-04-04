@@ -2,45 +2,45 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
-use BitWasp\Bitcoin\Exceptions\ScriptRuntimeException;
-use BitWasp\Bitcoin\Exceptions\SignerException;
-use BitWasp\Bitcoin\Exceptions\UnsupportedScript;
-use BitWasp\Bitcoin\Locktime;
-use BitWasp\Bitcoin\Script\Classifier\OutputData;
-use BitWasp\Bitcoin\Script\FullyQualifiedScript;
-use BitWasp\Bitcoin\Script\Interpreter\Checker;
-use BitWasp\Bitcoin\Script\Interpreter\CheckerBase;
-use BitWasp\Bitcoin\Script\Interpreter\Interpreter;
-use BitWasp\Bitcoin\Script\Interpreter\Number;
-use BitWasp\Bitcoin\Script\Interpreter\Stack;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Parser\Operation;
-use BitWasp\Bitcoin\Script\Path\BranchInterpreter;
-use BitWasp\Bitcoin\Script\ScriptFactory;
-use BitWasp\Bitcoin\Script\ScriptInfo\Multisig;
-use BitWasp\Bitcoin\Script\ScriptInfo\PayToPubkey;
-use BitWasp\Bitcoin\Script\ScriptInfo\PayToPubkeyHash;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptType;
-use BitWasp\Bitcoin\Script\ScriptWitness;
-use BitWasp\Bitcoin\Serializer\Signature\TransactionSignatureSerializer;
-use BitWasp\Bitcoin\Signature\TransactionSignature;
-use BitWasp\Bitcoin\Signature\TransactionSignatureInterface;
-use BitWasp\Bitcoin\Transaction\Factory\ScriptInfo\CheckLocktimeVerify;
-use BitWasp\Bitcoin\Transaction\Factory\ScriptInfo\CheckSequenceVerify;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
-use BitWasp\Bitcoin\Transaction\TransactionFactory;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Key\PublicKeySerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
+use Raptorio\Blockchain\Exceptions\ScriptRuntimeException;
+use Raptorio\Blockchain\Exceptions\SignerException;
+use Raptorio\Blockchain\Exceptions\UnsupportedScript;
+use Raptorio\Blockchain\Locktime;
+use Raptorio\Blockchain\Script\Classifier\OutputData;
+use Raptorio\Blockchain\Script\FullyQualifiedScript;
+use Raptorio\Blockchain\Script\Interpreter\Checker;
+use Raptorio\Blockchain\Script\Interpreter\CheckerBase;
+use Raptorio\Blockchain\Script\Interpreter\Interpreter;
+use Raptorio\Blockchain\Script\Interpreter\Number;
+use Raptorio\Blockchain\Script\Interpreter\Stack;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Parser\Operation;
+use Raptorio\Blockchain\Script\Path\BranchInterpreter;
+use Raptorio\Blockchain\Script\ScriptFactory;
+use Raptorio\Blockchain\Script\ScriptInfo\Multisig;
+use Raptorio\Blockchain\Script\ScriptInfo\PayToPubkey;
+use Raptorio\Blockchain\Script\ScriptInfo\PayToPubkeyHash;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptType;
+use Raptorio\Blockchain\Script\ScriptWitness;
+use Raptorio\Blockchain\Serializer\Signature\TransactionSignatureSerializer;
+use Raptorio\Blockchain\Signature\TransactionSignature;
+use Raptorio\Blockchain\Signature\TransactionSignatureInterface;
+use Raptorio\Blockchain\Transaction\Factory\ScriptInfo\CheckLocktimeVerify;
+use Raptorio\Blockchain\Transaction\Factory\ScriptInfo\CheckSequenceVerify;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Transaction\TransactionFactory;
+use Raptorio\Blockchain\Transaction\TransactionInput;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -300,7 +300,7 @@ class InputSigner implements InputSignerInterface
      * @param BufferInterface[] $publicKeys
      * @param int $sigVersion
      * @return \SplObjectStorage
-     * @throws \BitWasp\Bitcoin\Exceptions\ScriptRuntimeException
+     * @throws \Raptorio\Blockchain\Exceptions\ScriptRuntimeException
      */
     private function sortMultisigs(ScriptInterface $script, array $signatures, array $publicKeys, int $sigVersion): \SplObjectStorage
     {

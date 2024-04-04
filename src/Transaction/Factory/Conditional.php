@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Script\Opcodes;
+use Raptorio\Blockchain\Script\Opcodes;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

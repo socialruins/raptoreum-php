@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Chain;
+namespace Raptorio\Blockchain\Serializer\Chain;
 
-use BitWasp\Bitcoin\Chain\BlockLocator;
-use BitWasp\Bitcoin\Serializer\Types;
+use Raptorio\Blockchain\Chain\BlockLocator;
+use Raptorio\Blockchain\Serializer\Types;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction;
+namespace Raptorio\Blockchain\Transaction;
 
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\SerializableInterface;
-use BitWasp\Bitcoin\Utxo\Utxo;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\SerializableInterface;
+use Raptorio\Blockchain\Utxo\Utxo;
 use BitWasp\Buffertools\BufferInterface;
 
 interface TransactionInterface extends SerializableInterface

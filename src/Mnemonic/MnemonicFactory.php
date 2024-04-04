@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Mnemonic;
+namespace Raptorio\Blockchain\Mnemonic;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Mnemonic\Bip39\Bip39Mnemonic;
-use BitWasp\Bitcoin\Mnemonic\Bip39\Bip39WordListInterface;
-use BitWasp\Bitcoin\Mnemonic\Electrum\ElectrumMnemonic;
-use BitWasp\Bitcoin\Mnemonic\Electrum\ElectrumWordListInterface;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Mnemonic\Bip39\Bip39Mnemonic;
+use Raptorio\Blockchain\Mnemonic\Bip39\Bip39WordListInterface;
+use Raptorio\Blockchain\Mnemonic\Electrum\ElectrumMnemonic;
+use Raptorio\Blockchain\Mnemonic\Electrum\ElectrumWordListInterface;
 
 class MnemonicFactory
 {
@@ -23,12 +23,12 @@ class MnemonicFactory
     {
         return new ElectrumMnemonic(
             $ecAdapter ?: Bitcoin::getEcAdapter(),
-            $wordList ?: new \BitWasp\Bitcoin\Mnemonic\Electrum\Wordlist\EnglishWordList()
+            $wordList ?: new \Raptorio\Blockchain\Mnemonic\Electrum\Wordlist\EnglishWordList()
         );
     }
 
     /**
-     * @param \BitWasp\Bitcoin\Mnemonic\Bip39\Bip39WordListInterface $wordList
+     * @param \Raptorio\Blockchain\Mnemonic\Bip39\Bip39WordListInterface $wordList
      * @param EcAdapterInterface $ecAdapter
      * @return Bip39Mnemonic
      */

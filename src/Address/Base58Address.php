@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
-use BitWasp\Bitcoin\Base58;
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Base58;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Network\NetworkInterface;
 use BitWasp\Buffertools\Buffer;
 
 abstract class Base58Address extends Address implements Base58AddressInterface

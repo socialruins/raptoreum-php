@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
 use BitWasp\Buffertools\BufferInterface;
 

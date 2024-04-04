@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Serializer\Block;
+namespace Raptorio\Blockchain\Serializer\Block;
 
-use BitWasp\Bitcoin\Block\PartialMerkleTree;
+use Raptorio\Blockchain\Block\PartialMerkleTree;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\Parser;

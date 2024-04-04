@@ -1,14 +1,14 @@
 <?php
 
-namespace BitWasp\Bitcoin;
+namespace Raptorio\Blockchain;
 
-use BitWasp\Bitcoin\Chain\Params;
-use BitWasp\Bitcoin\Chain\ParamsInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcAdapterFactory;
-use BitWasp\Bitcoin\Math\Math;
-use BitWasp\Bitcoin\Network\NetworkFactory;
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Chain\Params;
+use Raptorio\Blockchain\Chain\ParamsInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcAdapterFactory;
+use Raptorio\Blockchain\Math\Math;
+use Raptorio\Blockchain\Network\NetworkFactory;
+use Raptorio\Blockchain\Network\NetworkInterface;
 use Mdanter\Ecc\EccFactory;
 use Mdanter\Ecc\Primitives\GeneratorPoint;
 

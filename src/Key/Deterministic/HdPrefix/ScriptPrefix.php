@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic\HdPrefix;
+namespace Raptorio\Blockchain\Key\Deterministic\HdPrefix;
 
-use BitWasp\Bitcoin\Exceptions\InvalidNetworkParameter;
-use BitWasp\Bitcoin\Key\KeyToScript\ScriptDataFactory;
+use Raptorio\Blockchain\Exceptions\InvalidNetworkParameter;
+use Raptorio\Blockchain\Key\KeyToScript\ScriptDataFactory;
 
 class ScriptPrefix
 {

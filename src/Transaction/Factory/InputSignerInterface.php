@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PrivateKeyInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Key\PublicKeyInterface;
-use BitWasp\Bitcoin\Script\FullyQualifiedScript;
-use BitWasp\Bitcoin\Signature\TransactionSignatureInterface;
-use BitWasp\Bitcoin\Transaction\SignatureHash\SigHash;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PrivateKeyInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Key\PublicKeyInterface;
+use Raptorio\Blockchain\Script\FullyQualifiedScript;
+use Raptorio\Blockchain\Signature\TransactionSignatureInterface;
+use Raptorio\Blockchain\Transaction\SignatureHash\SigHash;
 use BitWasp\Buffertools\BufferInterface;
 
 interface InputSignerInterface

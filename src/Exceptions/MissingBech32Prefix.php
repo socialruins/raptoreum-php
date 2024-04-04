@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BitWasp\Bitcoin\Exceptions;
+namespace Raptorio\Blockchain\Exceptions;
 
 class MissingBech32Prefix extends \Exception
 {

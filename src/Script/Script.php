@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Bitcoin;
-use BitWasp\Bitcoin\Crypto\Hash;
-use BitWasp\Bitcoin\Script\Classifier\OutputClassifier;
-use BitWasp\Bitcoin\Script\Interpreter\InterpreterInterface;
-use BitWasp\Bitcoin\Script\Interpreter\Number;
-use BitWasp\Bitcoin\Script\Parser\Parser;
-use BitWasp\Bitcoin\Serializable;
+use Raptorio\Blockchain\Bitcoin;
+use Raptorio\Blockchain\Crypto\Hash;
+use Raptorio\Blockchain\Script\Classifier\OutputClassifier;
+use Raptorio\Blockchain\Script\Interpreter\InterpreterInterface;
+use Raptorio\Blockchain\Script\Interpreter\Number;
+use Raptorio\Blockchain\Script\Parser\Parser;
+use Raptorio\Blockchain\Serializable;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 
@@ -255,7 +255,7 @@ class Script extends Serializable implements ScriptInterface
      * @param WitnessProgram|null $program
      * @return bool
      */
-    public function isWitness(& $program = null): bool
+    public function isWitness(&$program = null): bool
     {
         $buffer = $this->getBuffer();
         $size = $buffer->getSize();
@@ -286,7 +286,7 @@ class Script extends Serializable implements ScriptInterface
      * @param BufferInterface $scriptHash
      * @return bool
      */
-    public function isP2SH(& $scriptHash): bool
+    public function isP2SH(&$scriptHash): bool
     {
         if (strlen($this->script) === 23
             && $this->script[0] = Opcodes::OP_HASH160

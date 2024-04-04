@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Crypto\EcAdapter\Key;
+namespace Raptorio\Blockchain\Crypto\EcAdapter\Key;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
 use BitWasp\Buffertools\BufferInterface;
 
 interface PublicKeyInterface extends KeyInterface

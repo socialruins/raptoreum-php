@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Key\Deterministic\HdPrefix;
+namespace Raptorio\Blockchain\Key\Deterministic\HdPrefix;
 
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
 
 class NetworkConfig
 {

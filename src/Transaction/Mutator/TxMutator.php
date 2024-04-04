@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Mutator;
+namespace Raptorio\Blockchain\Transaction\Mutator;
 
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Transaction\Transaction;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Transaction\Transaction;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 
 class TxMutator
 {

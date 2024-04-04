@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory\ScriptInfo;
+namespace Raptorio\Blockchain\Transaction\Factory\ScriptInfo;
 
-use BitWasp\Bitcoin\Locktime;
-use BitWasp\Bitcoin\Script\Interpreter\Number;
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\Parser\Operation;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
+use Raptorio\Blockchain\Locktime;
+use Raptorio\Blockchain\Script\Interpreter\Number;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\Parser\Operation;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Transaction\TransactionInput;
 
 class CheckSequenceVerify
 {

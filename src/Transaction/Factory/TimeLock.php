@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Transaction\Factory\ScriptInfo\CheckLocktimeVerify;
-use BitWasp\Bitcoin\Transaction\Factory\ScriptInfo\CheckSequenceVerify;
+use Raptorio\Blockchain\Transaction\Factory\ScriptInfo\CheckLocktimeVerify;
+use Raptorio\Blockchain\Transaction\Factory\ScriptInfo\CheckSequenceVerify;
 
 class TimeLock
 {

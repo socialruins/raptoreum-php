@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Math;
+namespace Raptorio\Blockchain\Math;
 
 use Mdanter\Ecc\Math\GmpMath;
 use Mdanter\Ecc\Util\NumberSize;

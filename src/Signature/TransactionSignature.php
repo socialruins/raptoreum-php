@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Signature;
+namespace Raptorio\Blockchain\Signature;
 
-use BitWasp\Bitcoin\Crypto\EcAdapter\Adapter\EcAdapterInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\EcSerializer;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
-use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
-use BitWasp\Bitcoin\Exceptions\SignatureNotCanonical;
-use BitWasp\Bitcoin\Serializable;
-use BitWasp\Bitcoin\Serializer\Signature\TransactionSignatureSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Adapter\EcAdapterInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\EcSerializer;
+use Raptorio\Blockchain\Crypto\EcAdapter\Serializer\Signature\DerSignatureSerializerInterface;
+use Raptorio\Blockchain\Crypto\EcAdapter\Signature\SignatureInterface;
+use Raptorio\Blockchain\Exceptions\SignatureNotCanonical;
+use Raptorio\Blockchain\Serializable;
+use Raptorio\Blockchain\Serializer\Signature\TransactionSignatureSerializer;
 use BitWasp\Buffertools\BufferInterface;
 
 class TransactionSignature extends Serializable implements TransactionSignatureInterface

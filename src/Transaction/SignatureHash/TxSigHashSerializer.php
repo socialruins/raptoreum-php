@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\SignatureHash;
+namespace Raptorio\Blockchain\Transaction\SignatureHash;
 
-use BitWasp\Bitcoin\Script\Opcodes;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Serializer\Types;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Script\Opcodes;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Serializer\Types;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
 
 class TxSigHashSerializer
 {

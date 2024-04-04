@@ -1,9 +1,9 @@
 <?php
 
-namespace BitWasp\Bitcoin\Mnemonic\Electrum\Wordlist;
+namespace Raptorio\Blockchain\Mnemonic\Electrum\Wordlist;
 
-use BitWasp\Bitcoin\Mnemonic\Electrum\ElectrumWordListInterface;
-use BitWasp\Bitcoin\Mnemonic\WordList;
+use Raptorio\Blockchain\Mnemonic\Electrum\ElectrumWordListInterface;
+use Raptorio\Blockchain\Mnemonic\WordList;
 
 class EnglishWordList extends WordList implements ElectrumWordListInterface
 {

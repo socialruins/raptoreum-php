@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Network;
+namespace Raptorio\Blockchain\Network;
 
 interface NetworkInterface
 {

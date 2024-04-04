@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Exceptions;
+namespace Raptorio\Blockchain\Exceptions;
 
 class InvalidHashLengthException extends \ErrorException
 {

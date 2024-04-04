@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Mutator;
+namespace Raptorio\Blockchain\Transaction\Mutator;
 
 abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Countable
 {
@@ -38,6 +38,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      *
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->set->rewind();
@@ -46,6 +47,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return $this->set->current();
@@ -54,6 +56,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return $this->set->key();
@@ -62,6 +65,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      *
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         $this->set->next();
@@ -70,6 +74,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         return $this->set->valid();
@@ -79,6 +84,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
      * @param int $offset
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->set->offsetExists($offset);
@@ -87,6 +93,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     /**
      * @param int $offset
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         if (!$this->offsetExists($offset)) {
@@ -100,6 +107,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
      * @param int $offset
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         if (!$this->set->offsetExists($offset)) {
@@ -112,6 +120,7 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
      * @param int $offset
      * @param mixed $value
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->set->offsetSet($offset, $value);

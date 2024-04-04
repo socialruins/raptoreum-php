@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Transaction\Factory;
+namespace Raptorio\Blockchain\Transaction\Factory;
 
-use BitWasp\Bitcoin\Address\AddressInterface;
-use BitWasp\Bitcoin\Locktime;
-use BitWasp\Bitcoin\Script\Script;
-use BitWasp\Bitcoin\Script\ScriptFactory;
-use BitWasp\Bitcoin\Script\ScriptInterface;
-use BitWasp\Bitcoin\Script\ScriptWitnessInterface;
-use BitWasp\Bitcoin\Transaction\Bip69\Bip69;
-use BitWasp\Bitcoin\Transaction\OutPoint;
-use BitWasp\Bitcoin\Transaction\OutPointInterface;
-use BitWasp\Bitcoin\Transaction\Transaction;
-use BitWasp\Bitcoin\Transaction\TransactionInput;
-use BitWasp\Bitcoin\Transaction\TransactionInputInterface;
-use BitWasp\Bitcoin\Transaction\TransactionInterface;
-use BitWasp\Bitcoin\Transaction\TransactionOutput;
-use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
+use Raptorio\Blockchain\Address\AddressInterface;
+use Raptorio\Blockchain\Locktime;
+use Raptorio\Blockchain\Script\Script;
+use Raptorio\Blockchain\Script\ScriptFactory;
+use Raptorio\Blockchain\Script\ScriptInterface;
+use Raptorio\Blockchain\Script\ScriptWitnessInterface;
+use Raptorio\Blockchain\Transaction\Bip69\Bip69;
+use Raptorio\Blockchain\Transaction\OutPoint;
+use Raptorio\Blockchain\Transaction\OutPointInterface;
+use Raptorio\Blockchain\Transaction\Transaction;
+use Raptorio\Blockchain\Transaction\TransactionInput;
+use Raptorio\Blockchain\Transaction\TransactionInputInterface;
+use Raptorio\Blockchain\Transaction\TransactionInterface;
+use Raptorio\Blockchain\Transaction\TransactionOutput;
+use Raptorio\Blockchain\Transaction\TransactionOutputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
 

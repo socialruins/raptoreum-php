@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Script;
+namespace Raptorio\Blockchain\Script;
 
-use BitWasp\Bitcoin\Collection\CollectionInterface;
+use Raptorio\Blockchain\Collection\CollectionInterface;
 use BitWasp\Buffertools\BufferInterface;
 use BitWasp\Buffertools\SerializableInterface;
 

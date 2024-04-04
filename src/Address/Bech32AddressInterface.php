@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\Address;
+namespace Raptorio\Blockchain\Address;
 
-use BitWasp\Bitcoin\Network\NetworkInterface;
+use Raptorio\Blockchain\Network\NetworkInterface;
 
 interface Bech32AddressInterface extends AddressInterface
 {
